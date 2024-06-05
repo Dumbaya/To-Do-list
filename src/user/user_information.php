@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 $user_id = $_SESSION['user_id'];
 
-$sql = "SELECT user_id, email FROM user WHERE user_id = ?";
+$sql = "SELECT user_id, email, roll FROM user WHERE user_id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $user_id);
 $stmt->execute();
@@ -48,5 +48,10 @@ $conn->close();
     <form action="change_password.php">
         <button type="submit">비밀번호 수정</button>
     </form>
+    <?php if($user_data['roll']==0):?>
+    <form action="foradmin_userdata.php">
+        <button type="submit">관리자 전용 유저데이터</button>
+    </form>
+    <?php endif;?>
 </body>
 </html>

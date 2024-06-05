@@ -56,5 +56,8 @@ $conn->close();
     <input type="password" id="password" name="password" required><br><br>
     <button type="submit">로그인
 </form>
+<form action="signup.php">
+    <button type="submit">회원가입</button>
+</form>
 </body>
 </html>

@@ -47,7 +47,7 @@ $conn->close();
     <input type="password" id="password" name="password" required><br><br>
     <label for="email">이메일:</label>
     <input type="email" id="email" name="email" required><br><br>
-    <button type="submit" value="회원가입">
+    <button type="submit">회원가입</button>
 </form>
 </body>
 </html>
