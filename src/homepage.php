@@ -17,6 +17,9 @@ session_start();
     <form action="user/user_information.php">
         <button type="submit">내 정보</button>
     </form>
+    <form action="todolist/todolist.php">
+        <button type="submit">To Do List</button>
+    </form>
 <?php else: ?>
     <h2>로그인이 필요합니다</h2>
     <p>로그인 후에 이용할 수 있습니다.</p>
