@@ -75,7 +75,7 @@ $conn->close();
     <button type="submit">홈페이지</button>
 </form>
 <h1>할일 목록</h1>
-<button id="openPopup">Open Popup</button>
+<button id="openPopup">할일 추가</button>
 
 <div id="popupOverlay" class="popup-overlay"></div>
 <div id="popup" class="popup">
